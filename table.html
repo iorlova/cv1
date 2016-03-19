@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table</title>
+    </head>
+    <body>
+        <table style="border:3px dotted blue" width="500" height="300">
+            <thead>
+                <tr>
+                    <th style="border:2px dotted black" rowspan="2">summary</th>
+                    <th style="border:2px dotted black">qwarter1</th>
+                    <th style="border:2px dotted black">qwarter2</th>
+                </tr>
+                <tr>
+                    <th style="border:2px dotted black">results</th>
+                    <th style="border:2px dotted black">results</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border:1px dotted blue">january</td>
+                    <td style="border:1px dotted gray">10</td>
+                    <td style="border:1px dotted gray">20</td>
+                </tr>
+                <tr>
+                    <td style="border:1px dotted blue">february</td>
+                    <td style="border:1px dotted gray">30</td>
+                    <td style="border:1px dotted gray">40</td>
+                </tr>
+                <tr>
+                    <td style="border:1px dotted blue">total</td>
+                    <td  style="border:5px dotted #2ECCFA" colspan="2">100</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul type="circle">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+        <ol reversed start="5">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ol>
+        
+        <form action="contacts.js" method="post">
+            <label for="name">Name</label>
+            <input id="name" type="text" required placeholder="your name here">
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="text" required autofocus>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
