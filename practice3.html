@@ -81,20 +81,26 @@
         <form action="contacts.js" method="post">
             <fieldset>
                 <label for="name">Name</label>
-                <input id="name" type="text" required placeholder="your name here"/>
+                <input id="name" type="text" required placeholder="your name here">
                 <br>
                 <label for="uniqcode">Code</label>
                 <input id="uniqcode" type="text" 
                     pattern="[0-9] {4}" title="four-digit uniq code"
-                    required placeholder="your uniq code"/>
+                    required placeholder="your uniq code">
                 <br>
                 <label for="email">Email</label>
-                <input id="email" type="text" required placeholder="your email here"/>
+                <input id="email" type="text" required placeholder="your email here">
                 <br>
-                <label for="message">Message</label>
-                <input id="message" type="text" required autofocus/>
+                <p>Вкажіть свою стать</p>
+                <input type="radio" value="male" name="sex"> Male
+                <input type="radio" value="female" name="sex"> Female
                 <br>
-                <input type="submit" value="Send message"/>
+                <p>Message</p>
+                <textarea name="message" cols="30" rows="5" required autofocus></textarea>
+                <br>
+                <input type="checkbox"> I agree...
+                <br>
+                <input type="submit" value="Send message">
             </fieldset>
         </form>
         <br>
