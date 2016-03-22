@@ -75,7 +75,29 @@
                 <td>750 pounds</td>
             </tr>
         </table>
-        
+        <br>
+        <hr>
+        <br>
+        <form action="contacts.js" method="post">
+            <fieldset>
+                <label for="name">Name</label>
+                <input id="name" type="text" required placeholder="your name here"/>
+                <br>
+                <label for="uniqcode">Code</label>
+                <input id="uniqcode" type="text" 
+                    pattern="[0-9] {4}" title="four-digit uniq code"
+                    required placeholder="your uniq code"/>
+                <br>
+                <label for="email">Email</label>
+                <input id="email" type="text" required placeholder="your email here"/>
+                <br>
+                <label for="message">Message</label>
+                <input id="message" type="text" required autofocus/>
+                <br>
+                <input type="submit" value="Send message"/>
+            </fieldset>
+        </form>
+        <br>
         <footer>
             <hr>
             <p>Information from <a href="https://en.wikipedia.org/wiki/Honda_Valkyrie">Vikipedia</a></p>
